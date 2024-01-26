@@ -26,37 +26,39 @@ Besides that, we have the persons that interact with the store these are:
 
 ## Exercises and references:
 
-### 28/11/2023
-* Use at least 5 lambda functions from the java.util.function package. 
-* Create 3 custom Lambda functions with generics. 
-* Create 5 complex Enums(with fields, methods, blocks).
+### 30/11/2023
+* Add 7 collection streaming in the hierarchy with terminal and non-terminal operations.
+* Using reflection extract information (modifiers, return types, parameters, etc)
+about fields, constructors, methods. 
+* Create object and call method using the only reflection.
 
 ### Solution
-The five lambda functions are in the class RawMaterial
-in the method separateProduct(String materialType, double amount ,Employee employee).
-The functions used are: 
-* Function-Bifunction-Predicate-Biconsumer-Supplier.
-This method tells an employee how to separate gasoline and sand,
-  in how many recipients or bags, the estimated time of work to do it and 
-  the transaction date.
-  This method applies only in this class and this method
-  .For that reason, we use these functions
+The seven collections streaming were added:
+Three of them in the main method, the use for each one:
+1. Stream example 1: return a list of only electrical products from an ArrayList<Products>.
+2. Stream example 2: return only the product that doesn't have its voltage set from a List<ElectricProduct>, and set it in 230V.
+3. Stream example 3: find any Electric product from a List<ElectricProduct> that doesn't have the voltage set.
 
-The example of this implementation could be seen in the main method.
+The next four could be found in the ReadingFile.java class in
+the following static methods:
+1. findUniqueWord(String wordToFind, String inputFilePath): 
+This method looks for a given word in the input file and throws a message
+if it exists or if it does not exist.
+2. orderWordsByLength(String inputFilePath, String outputFilePath):
+This method orders the given words of the input from top to down, according to their length.
+After that, write it in the orderWordsByLengthOutput.txt in the resources package.
+3. countCharacters(String inputFilePath):
+This method counts all the characters in a file (spaces and punctuation are not counted)
+4. findAnyNumber(String inputFilePath):
+This method throws a message if finds any number in owr text.
 
-The three custom lambda functions with generics are in the package funcinterfaces. These are:
-* ModifyAnyString: Retrieves a string
-* OperateInEmployeeList: Retrieves something when you operate into a List of employee
-* ResultAsInteger: Retrieves always an integer
+The example of using these static functions in each case could be seen in the main method.
 
-The example of this implementation could be seen in the main method.
+To be more clear in the activities output in the console, 
+the reflection activity is going to be in the repository:
+* solvd-1-block-homework-10-part-2
 
-The five Enums are in the package enumexamples and are: 
-* PhoneNumbers, CurrencyExchange, BankAccounts, LowLevelPassword,
-  ImportantEmails.
-  Each one has fields, methods, and blocks.
 
-The example of using the static function in each case could be seen in the main method.
 
 
 

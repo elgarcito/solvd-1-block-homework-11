@@ -1,12 +1,13 @@
 counting=1
-the=1
 a=1
-see=1
-and=1
 work=2
 this=1
 reading=1
 is=1
+the=1
+see=1
+and=1
+7=1
 text=1
 to=1
 if=1
