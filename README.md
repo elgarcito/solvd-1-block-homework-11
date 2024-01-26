@@ -26,7 +26,7 @@ Besides that, we have the persons that interact with the store these are:
 
 ## Exercises and references:
 
-### 30/11/2023
+### 05/12/2023
 * Create 2 Threads using Runnable and Thread.
 * Initialize pool with 5 sizes.
   Load Connection Pool using threads and Thread Pool(7 threads).

@@ -70,7 +70,7 @@ public class Main {
         LOGGER.info("The program waits until all threads finishes to continue");
         System.out.println();
         LOGGER.info("Now with completable future");
-        System.out.println();30
+        System.out.println();
         ConnectionPoolWithFuture connectionPoolWithFuture=ConnectionPoolWithFuture.getInstance();
         int newAmountOfConnections=7;
 
