@@ -27,18 +27,20 @@ Besides that, we have the persons that interact with the store these are:
 ## Exercises and references:
 
 ### 30/11/2023
-* Add 7 collection streaming in the hierarchy with terminal and non-terminal operations.
-* Using reflection extract information (modifiers, return types, parameters, etc)
-about fields, constructors, methods. 
-* Create object and call method using the only reflection.
+* Create 2 Threads using Runnable and Thread.
+* Initialize pool with 5 sizes.
+  Load Connection Pool using threads and Thread Pool(7 threads).
+  5 threads should be able to get the connection.
+  2 Threads should wait for the next available connection.
+  The program should wait as well.
+* Implement 4th part but with IFuture and CompletableStage.
 
 ### Solution
-In this part 2, we use reflection to access different classes and methods.
-In the main method there is specified class by class, method by method and field by field,
-the result of each case selected.
+The classes ThreadWithThread an ThreadWithRunnable were created in the mythreads package.
+The example could be seen in the main method.
 
-All previous console output and data in the main method from part-1 was deleted 
-to see only reflections exercises results.
+All previous console output and data in the main method was deleted 
+to see only this exercise results.
 
 
 
