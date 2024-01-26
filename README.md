@@ -33,30 +33,12 @@ about fields, constructors, methods.
 * Create object and call method using the only reflection.
 
 ### Solution
-The seven collections streaming were added:
-Three of them in the main method, the use for each one:
-1. Stream example 1: return a list of only electrical products from an ArrayList<Products>.
-2. Stream example 2: return only the product that doesn't have its voltage set from a List<ElectricProduct>, and set it in 230V.
-3. Stream example 3: find any Electric product from a List<ElectricProduct> that doesn't have the voltage set.
+In this part 2, we use reflection to access different classes and methods.
+In the main method there is specified class by class, method by method and field by field,
+the result of each case selected.
 
-The next four could be found in the ReadingFile.java class in
-the following static methods:
-1. findUniqueWord(String wordToFind, String inputFilePath): 
-This method looks for a given word in the input file and throws a message
-if it exists or if it does not exist.
-2. orderWordsByLength(String inputFilePath, String outputFilePath):
-This method orders the given words of the input from top to down, according to their length.
-After that, write it in the orderWordsByLengthOutput.txt in the resources package.
-3. countCharacters(String inputFilePath):
-This method counts all the characters in a file (spaces and punctuation are not counted)
-4. findAnyNumber(String inputFilePath):
-This method throws a message if finds any number in owr text.
-
-The example of using these static functions in each case could be seen in the main method.
-
-To be more clear in the activities output in the console, 
-the reflection activity is going to be in the repository:
-* solvd-1-block-homework-10-part-2
+All previous console output and data in the main method from part-1 was deleted 
+to see only reflections exercises results.
 
 
 

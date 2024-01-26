@@ -10,3 +10,7 @@
 17:29:16.966 [main] ERROR com.solvd.hardwarestore.person.Employee - com.solvd.hardwarestore.exceptions.EmailException: Please only use a @gmail.com email.
 17:29:16.968 [main] ERROR com.solvd.hardwarestore.person.Employee - com.solvd.hardwarestore.exceptions.PhoneNumberException: The phone number has 9 digits and should be 8 digits
 17:29:16.970 [main] ERROR com.solvd.hardwarestore.person.Employee - com.solvd.hardwarestore.exceptions.EmployeeSpecialityException: The specialitycleaner doesn't exist, please enter a valid one: seller or deposit.
+12:03:46.624 [main] WARN  com.solvd.hardwarestore.products.ElectricProduct - You have not enough stock to sell this electric product, your stock is: 0 units
+
+12:10:52.066 [main] WARN  com.solvd.hardwarestore.products.ElectricProduct - You have not enough stock to sell this electric product, your stock is: 0 units
+
