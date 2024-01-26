@@ -39,6 +39,14 @@ Besides that, we have the persons that interact with the store these are:
 The classes ThreadWithThread an ThreadWithRunnable were created in the mythreads package.
 The example could be seen in the main method.
 
+The Connection pool was created in the connectionpool package
+The MockConnection also was created
+In this connection pool 
+* 5 threads should be able to get the connection.
+* 2 Threads should wait for the next available connection.
+
+The example of this implementation is in the main method
+
 All previous console output and data in the main method was deleted 
 to see only this exercise results.
 

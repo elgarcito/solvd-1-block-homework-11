@@ -18,10 +18,15 @@ Employee: the employee of the store.
 ProductSupplier: the one that sells the product.
 Client: the one that buys the product.
  */
+import com.solvd.hardwarestore.connectionpool.ConnectionPool;
+import com.solvd.hardwarestore.connectionpool.MockConnection;
 import com.solvd.hardwarestore.mythreads.ThreadWithRunnable;
+import com.solvd.hardwarestore.mythreads.ThreadWithRunnableAndMockConnection;
 import com.solvd.hardwarestore.mythreads.ThreadWithThread;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
 
 public class Main {
     static {
@@ -31,6 +36,7 @@ public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
+
         //Two threads creation
         LOGGER.info("Hello from main");
         //Thread with runnable
@@ -39,5 +45,23 @@ public class Main {
         //Thread with extends of Thread
         (new ThreadWithThread()).start();
         LOGGER.info("Bye from main");
+        System.out.println();
+
+        //Connection pool Example
+        ConnectionPool connectionPool=ConnectionPool.getInstance();
+        int amountOfConnections=7;
+        ArrayList<Thread> listOfThreads=new ArrayList<>();
+        for (int i = 0; i < amountOfConnections; i++) {
+            Thread thread=new Thread(new ThreadWithRunnableAndMockConnection(connectionPool));
+            listOfThreads.add(thread);
+        }
+        for (int i = 0; i < amountOfConnections; i++) {
+            listOfThreads.get(i).start();
+        }
+
+
+
+
+
     }
 }
