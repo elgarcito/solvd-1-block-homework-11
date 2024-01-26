@@ -19,7 +19,7 @@ ProductSupplier: the one that sells the product.
 Client: the one that buys the product.
  */
 import com.solvd.hardwarestore.connectionpool.ConnectionPool;
-import com.solvd.hardwarestore.connectionpool.MockConnection;
+import com.solvd.hardwarestore.connectionpool.ConnectionPoolWithFuture;
 import com.solvd.hardwarestore.mythreads.ThreadWithRunnable;
 import com.solvd.hardwarestore.mythreads.ThreadWithRunnableAndMockConnection;
 import com.solvd.hardwarestore.mythreads.ThreadWithThread;
@@ -27,9 +27,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class Main {
     static {
@@ -39,6 +36,7 @@ public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
+
 
         //Two threads creation
         LOGGER.info("Hello from main");
@@ -70,6 +68,31 @@ public class Main {
         }
         System.out.println();
         LOGGER.info("The program waits until all threads finishes to continue");
+        System.out.println();
+        LOGGER.info("Now with completable future");
+        System.out.println();30
+        ConnectionPoolWithFuture connectionPoolWithFuture=ConnectionPoolWithFuture.getInstance();
+        int newAmountOfConnections=7;
 
+        //Completable Future
+        for (int i = 0; i < newAmountOfConnections; i++) {
+            connectionPoolWithFuture.getConnectionCompletionStage()
+                    .thenAccept(connection -> {
+                        LOGGER.info(Thread.currentThread().getName() + " got connection with completable Stage: " + connection.hashCode());
+                        try {
+                            Thread.sleep(4000);
+                        } catch (InterruptedException e) {
+                            LOGGER.error(e.getMessage());
+                        }
+                        connectionPoolWithFuture.releaseConnection(connection);
+                        LOGGER.info(Thread.currentThread().getName() + " released connection with completable Stage: " + connection.hashCode());
+                    })
+                    .exceptionally(throwable -> {
+                        throwable.printStackTrace();
+                        return null;
+                    });
+        }
+        connectionPoolWithFuture.shutDownExecutorService();
     }
+
 }

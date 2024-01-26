@@ -8,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 public class ThreadWithRunnableAndMockConnection implements Runnable{
     private static final Logger LOGGER = LogManager.getLogger(ThreadWithRunnableAndMockConnection.class);
     private ConnectionPool connectionPool;
-    //private final Object lock=connectionPool.lock;
 
     public ThreadWithRunnableAndMockConnection(ConnectionPool connectionPool) {
         this.connectionPool = connectionPool;

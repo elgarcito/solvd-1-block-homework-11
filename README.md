@@ -50,6 +50,9 @@ In this connection pool
 
 The example of this implementation is in the main method
 
+Finally, the example of using IFuture and CompletableStage could be seen in the main 
+method
+
 All previous console output and data in the main method was deleted 
 to see only this exercise results.
 
