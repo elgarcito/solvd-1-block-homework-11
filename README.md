@@ -40,10 +40,13 @@ The classes ThreadWithThread an ThreadWithRunnable were created in the mythreads
 The example could be seen in the main method.
 
 The Connection pool was created in the connectionpool package
-The MockConnection also was created
+The MockConnection also was created in the connectionpool package
+The ThreadWithRunnableAndMockConnection.java also in the connectionpool package
+
 In this connection pool 
 * 5 threads should be able to get the connection.
 * 2 Threads should wait for the next available connection.
+* The program should wait as well.
 
 The example of this implementation is in the main method
 

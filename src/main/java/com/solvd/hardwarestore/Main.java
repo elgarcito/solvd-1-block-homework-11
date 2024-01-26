@@ -27,6 +27,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Main {
     static {
@@ -58,10 +61,15 @@ public class Main {
         for (int i = 0; i < amountOfConnections; i++) {
             listOfThreads.get(i).start();
         }
-
-
-
-
+        for (Thread thread:listOfThreads) {
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        System.out.println();
+        LOGGER.info("The program waits until all threads finishes to continue");
 
     }
 }
