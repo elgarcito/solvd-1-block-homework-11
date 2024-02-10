@@ -1,4 +1,4 @@
-package com.solvd.hardwarestore.finalclasess;
+package com.solvd.hardwarestore.final_clasess;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

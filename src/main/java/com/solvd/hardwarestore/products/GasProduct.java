@@ -1,6 +1,6 @@
 package com.solvd.hardwarestore.products;
-import com.solvd.hardwarestore.abstractclasses.Product;
-import com.solvd.hardwarestore.createdinterfaces.*;
+import com.solvd.hardwarestore.abstract_classes.Product;
+import com.solvd.hardwarestore.created_interfaces.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

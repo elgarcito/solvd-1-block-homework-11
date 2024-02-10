@@ -1,4 +1,4 @@
-package com.solvd.hardwarestore.createdinterfaces;
+package com.solvd.hardwarestore.created_interfaces;
 
 //An interface used to define the price of a product using a win percentage.
 public interface Priceable {

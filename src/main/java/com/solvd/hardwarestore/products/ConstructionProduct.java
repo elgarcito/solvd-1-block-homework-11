@@ -1,5 +1,5 @@
 package com.solvd.hardwarestore.products;
-import com.solvd.hardwarestore.abstractclasses.RawMaterial;
+import com.solvd.hardwarestore.abstract_classes.RawMaterial;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

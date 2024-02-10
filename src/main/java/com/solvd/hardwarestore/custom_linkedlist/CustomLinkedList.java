@@ -1,4 +1,4 @@
-package com.solvd.hardwarestore.customlinkedlist;
+package com.solvd.hardwarestore.custom_linkedlist;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

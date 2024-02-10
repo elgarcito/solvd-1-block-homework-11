@@ -18,8 +18,8 @@ Employee: the employee of the store.
 ProductSupplier: the one that sells the product.
 Client: the one that buys the product.
  */
-import com.solvd.hardwarestore.connectionpool.ConnectionPool;
-import com.solvd.hardwarestore.connectionpool.ConnectionPoolWithFuture;
+import com.solvd.hardwarestore.connection_pool.ConnectionPool;
+import com.solvd.hardwarestore.connection_pool.ConnectionPoolWithFuture;
 import com.solvd.hardwarestore.mythreads.ThreadWithRunnable;
 import com.solvd.hardwarestore.mythreads.ThreadWithRunnableAndMockConnection;
 import com.solvd.hardwarestore.mythreads.ThreadWithThread;

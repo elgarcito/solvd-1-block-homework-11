@@ -1,4 +1,4 @@
-package com.solvd.hardwarestore.enumexamples;
+package com.solvd.hardwarestore.enum_examples;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

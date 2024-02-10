@@ -1,4 +1,4 @@
-package com.solvd.hardwarestore.readwritefile;
+package com.solvd.hardwarestore.read_write_file;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;

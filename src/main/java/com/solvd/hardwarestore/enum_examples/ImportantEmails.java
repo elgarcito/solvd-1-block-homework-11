@@ -1,4 +1,4 @@
-package com.solvd.hardwarestore.enumexamples;
+package com.solvd.hardwarestore.enum_examples;
 
 public enum ImportantEmails {
     YUAN_EXCHANGER_PLATFORM_EMAIL("YUAN_yuam@gmail.com",ExchangerPlatformPassword.YUAN_PASSWORD),

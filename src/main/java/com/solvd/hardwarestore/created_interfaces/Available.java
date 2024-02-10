@@ -1,4 +1,4 @@
-package com.solvd.hardwarestore.createdinterfaces;
+package com.solvd.hardwarestore.created_interfaces;
 
 /*
 This interface let us know if there is stock available or no.

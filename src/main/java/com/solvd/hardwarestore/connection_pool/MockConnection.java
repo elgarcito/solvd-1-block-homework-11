@@ -1,4 +1,4 @@
-package com.solvd.hardwarestore.connectionpool;
+package com.solvd.hardwarestore.connection_pool;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

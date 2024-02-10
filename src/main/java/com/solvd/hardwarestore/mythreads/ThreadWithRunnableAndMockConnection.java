@@ -1,7 +1,7 @@
 package com.solvd.hardwarestore.mythreads;
 
-import com.solvd.hardwarestore.connectionpool.ConnectionPool;
-import com.solvd.hardwarestore.connectionpool.MockConnection;
+import com.solvd.hardwarestore.connection_pool.ConnectionPool;
+import com.solvd.hardwarestore.connection_pool.MockConnection;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

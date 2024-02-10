@@ -1,4 +1,4 @@
-package com.solvd.hardwarestore.abstractclasses;
+package com.solvd.hardwarestore.abstract_classes;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

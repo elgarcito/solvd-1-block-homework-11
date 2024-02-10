@@ -1,5 +1,5 @@
 package com.solvd.hardwarestore.person;
-import com.solvd.hardwarestore.abstractclasses.Person;
+import com.solvd.hardwarestore.abstract_classes.Person;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

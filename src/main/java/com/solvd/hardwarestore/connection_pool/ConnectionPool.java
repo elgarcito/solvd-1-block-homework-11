@@ -1,11 +1,9 @@
-package com.solvd.hardwarestore.connectionpool;
+package com.solvd.hardwarestore.connection_pool;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
-import java.util.Objects;
-import java.util.concurrent.CountDownLatch;
 
 public class ConnectionPool {
     private static final Logger LOGGER = LogManager.getLogger(ConnectionPool.class);
